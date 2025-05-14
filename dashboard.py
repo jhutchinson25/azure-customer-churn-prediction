@@ -13,7 +13,7 @@ st.title("Customer Churn Prediction Dashboard")
 # Input form
 with st.form("churn_form"):
     gender = st.selectbox("Gender", ["Male", "Female"])
-    senior_citizen = st.selectbox("Senior Citizen", ["0", "1"])  # Usually 0/1 in dataset
+    senior_citizen = st.selectbox("Senior Citizen", ["Yes", "No"])
     partner = st.selectbox("Partner", ["Yes", "No"])
     dependents = st.selectbox("Dependents", ["Yes", "No"])
     tenure = st.slider("Tenure (Months)", 0, 72, 12)
